@@ -1,0 +1,83 @@
+/* General Styling */
+html, body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    touch-action: none;
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    background-color: #222;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Main Container */
+#container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    max-width: 600px;
+    position: absolute;
+    bottom: 15%; /* Moves both elements down */
+}
+
+/* Button Container */
+#button-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+/* Button Styling */
+.but {
+    width: 80px;
+    height: 80px;
+    background: orange;
+    color: yellow;
+    font-size: 30px;
+    -webkit-text-stroke: 2px black;
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-style: italic
+}
+
+.but:active {
+    background: yellow;
+    color: orange;
+}
+
+/* Joystick Container */
+#joystick-container {
+    width: 150px;
+    height: 150px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Joystick */
+#joystick {
+    width: 60px;
+    height: 60px;
+    background-color: black;
+    background-image: url("as.jpg");
+    border-radius: 50%;
+    background-position: center;
+    background-size: contain;
+    transition: transform 0.05s linear;
+}
+.help {
+    position: absolute;
+    max-width: 100px;
+    max-height: 100px;
+    top: 0;
+    left: 0;
+}

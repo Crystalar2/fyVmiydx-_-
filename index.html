@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Flash</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <div id="container">
+        <!-- Button Grid (Left Side) -->
+        <div id="button-container">
+            <button class="but" id="bu1" onclick="audi()">A</button>
+            <button class="but" id="bu2" onclick="audi()">B</button>
+            <button class="but" id="bu3" onclick="audi()">C</button>
+            <button class="but" id="bu4" onclick="audi()">D</button>
+        </div>
+
+        <!-- Joystick (Right Side) -->
+        <div id="joystick-container">
+            <div id="joystick"></div>
+        </div>
+    </div>
+
+    <audio id="audio" src="cli.mp3" type="audio/mp3"></audio>
+
+    <script src="script.js"></script>
+    <script src="ruffles.js"></script>
+    <img src="styles/py.png" class="help">
+</body>
+</html>
